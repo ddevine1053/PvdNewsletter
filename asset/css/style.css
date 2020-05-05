@@ -1,0 +1,249 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #F0F0F0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  
+  .skw-pages {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .skw-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .skw-page__half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  .skw-page__half--left {
+    left: 0;
+    -webkit-transform: translate3d(-32.4vh, 100%, 0);
+            transform: translate3d(-32.4vh, 100%, 0);
+  }
+  .skw-page__half--right {
+    left: 50%;
+    -webkit-transform: translate3d(32.4vh, -100%, 0);
+            transform: translate3d(32.4vh, -100%, 0);
+  }
+  .skw-page.active .skw-page__half {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .skw-page__skewed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    -webkit-transform: skewX(-18deg);
+            transform: skewX(-18deg);
+    background: #000;
+  }
+  .skw-page__half--left .skw-page__skewed {
+    left: -40%;
+  }
+  .skw-page__half--right .skw-page__skewed {
+    right: -40%;
+  }
+  .skw-page__content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30%;
+    color: #fff;
+    -webkit-transform: skewX(18deg);
+            transform: skewX(18deg);
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s, -webkit-transform 1s;
+    background-size: cover;
+  }
+  .skw-page__half--left .skw-page__content {
+    padding-left: 30%;
+    padding-right: 30%;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+  }
+  .skw-page__half--right .skw-page__content {
+    padding-left: 30%;
+    padding-right: 30%;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  .skw-page.inactive .skw-page__content {
+    opacity: 0.5;
+    -webkit-transform: skewX(18deg) scale(0.95);
+            transform: skewX(18deg) scale(0.95);
+  }
+  .skw-page__heading {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+  }
+  .skw-page__description {
+    font-size: 18px;
+    text-align: center;
+  }
+  .skw-page__link {
+    color: #FFA0A0;
+  }
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+    background: white;
+  }
+  .skw-page-1 .skw-page__half--right .skw-page__content {
+    background: white;
+  }
+  .skw-page-2 .skw-page__half--left .skw-page__content {
+    background-repeat: no-repeat;
+    background-image: url("https://i.imgur.com/WfCDt4B.png");
+    background-attachment: fixed;
+    background-position: -200px 0px;
+    background-color: #3C3939;
+  }
+  .skw-page-2 .skw-page__half--right .skw-page__content {
+    background-image: url("https://i.imgur.com/yVxaQr7.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70px 0px;
+    background-color: #f8f8f5;
+  }
+  .skw-page-3 .skw-page__half--left .skw-page__content {
+    background-image: url("https://i.imgur.com/aLsNBe7.png");
+    background-attachment: fixed;
+    background-position: -200px 0px;
+    background-color: #3C3939;
+  }
+  .skw-page-3 .skw-page__half--right .skw-page__content {
+    background-image: url("https://i.imgur.com/aLsNBe7.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70px 0px;
+
+
+  }
+  .skw-page-4 .skw-page__half--left .skw-page__content {
+    background: #292929;
+  }
+  .skw-page-4 .skw-page__half--right .skw-page__content {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
+  }
+  .skw-page-5 .skw-page__half--left .skw-page__content {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
+  }
+  .skw-page-5 .skw-page__half--right .skw-page__content {
+    background: #292929;
+  }
+
+  html, body {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 28px;
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    letter-spacing: -15px;
+    font-family: Open Sans;
+    color: white;
+    text-align: center;
+    font-size: 200px;
+    font-weight: 800;
+    line-height: 200px;
+  }
+  
+  .MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #F0F0F0;
+    /* background-image: url(https://i.imgur.com/8GxTy7p.png); */
+  }
+  
+  .ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .Content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  
+  p {
+    margin: 75px 0;
+  }
+  
+  .ParallaxContainer {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url(https://i.imgur.com/Ayncxm5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .article-box{
+    margin: auto;
+    max-width: 80%;
+  }
+  .placeholder{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: 20%;
+  }
+
+  .foot-img{
+    padding: 0 50px;
+    width:100%;
+    background-color: #F0F0F0;
+
+  }
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+  
+  .mainBody{
+    padding: 0 50px;
+  }
+
+  .navbar{
+    background-color:  #F0F0F0;
+  }
