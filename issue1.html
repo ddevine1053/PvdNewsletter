@@ -2,98 +2,168 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Baseline #01</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'><link rel="stylesheet" href="./styleFlip.css">
-
+  <title>Baseline | Issue #01</title>
+  <link rel="shortcut icon" type="image/png" href="#">
+  <link rel="stylesheet" href="./style2.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="bookWrapper">
-      <div class="bookBg">
-        <div class="pageBg centerClass">
-          <div class="pageWrapper">
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!--Bootstrap Goes Here-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-            <div id="page16" class="page">
-              <div class="pageFace front">
-                <!-- third page, right side -->
-                <img src="http://www.savethecat.com/wp-content/uploads/2016/03/Zootopia_final.jpg"/>
-                <div class="pageFoldRight"></div>
-              </div>
-              <div class="pageFace back">
-                <div class="pageFoldLeft"></div>
-              </div>
-            </div>
-            
+  <!-- Fichier pour le Booklet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>  
+    <script src="../booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="../booklet/jquery.booklet.latest.js" type="text/javascript"></script>
+    <link href="../booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+  
+  <!-- Initialisé le Booklet pour un livre
+  <script type="text/javascript">
 
-            <div id="page5" class="page">
-              <div class="pageFace front">
-                <!-- third page, right side -->
-                <img src="./asset/images/9.png"/>
-                <div class="pageFoldRight"></div>
-              </div>
-              <div class="pageFace back">
-                <img src="./asset/images/10.png"/>
-                <div class="pageFoldLeft"></div>
-              </div>
-            </div>
-
-                
-            <div id="page4" class="page">
-              <div class="pageFace front">
-                <!-- third page, right side -->
-                <img src="./asset/images/7.png">
-                <div class="pageFoldRight"></div>
-              </div>
-              <div class="pageFace back">
-                <img src="./asset/images/8.png">
-                <div class="pageFoldLeft"></div>
-              </div>
-            </div>
-
-            <div id="page3" class="page">
-              <div class="pageFace front">
-                <!-- third page, right side -->
-                <img src="./asset/images/5.png"/>
-                <div class="pageFoldRight"></div>
-              </div>
-              <div class="pageFace back">
-                <img src="./asset/images/6.png">
-                <div class="pageFoldLeft"></div>
-              </div>
-            </div>
-            <div id="page2" class="page">
-              <div class="pageFace front">
-                <!-- second page, right side -->
-                <img src="./asset/images/3.png">
-              </div>
-              <div class="pageFace back">
-                <!-- third page, left side -->
-                <img src="./asset/images/4.png">
-                <div class="pageFoldLeft"></div>
-              </div>
-            </div>
-            <div id="page1" class="page">
-              <div class="pageFace front">
-                <!-- first page, right side -->
-                <img src="./asset/images/1.png"/>
-                <!-- <div class="pageFoldRight"></div></div> -->
-              </div>
-              <div class="pageFace back">
-                <!-- second page, left side-->
-                <img src="./asset/images/2.png">
-                <!-- <div class="pageFoldLeft"></div> -->
-              </div>
-            </div>
-          </div>
-        </div>
+	    $(function () {		        
+	        $("#mybook").booklet({ width: 1200, height: 840, closed: true, pageNumbers: false, hovers: false, next: "#next_page_button", prev:"#prev_page_button", hoverWidth: 0, });
+        
+        var next = $(".selector").booklet( "option", "next" );
+        var prev = $(".selector").booklet( "option", "prev" );
+        $(".selector").booklet( "option", "next", "#next_page_button" );
+        $(".selector").booklet( "option", "prev", "#prev_page_button" );       
+	    });
+    </script> -->
+</head>
+<body>
+  <div class="ccontatiner">
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Baseline.</a>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" id="banner">
+      <div class="container">
+        <div class="squiggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="94.376" height="8.866" viewBox="0 0 94.376 8.866">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #1e1e2c;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 10;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
+            <g id="Group_2948" data-name="Group 2948" transform="translate(2.79 2)">
+              <g id="Group_2947" data-name="Group 2947">
+                <g id="Group_2934" data-name="Group 2934">
+                  <g id="Group_2931" data-name="Group 2931">
+                    <path id="Path_1683" data-name="Path 1683" class="cls-1" d="M322.665,18.943a12.47,12.47,0,0,1,14.8,0" transform="translate(-322.665 -16.51)"/>
+                    <path id="Path_1684" data-name="Path 1684" class="cls-1" d="M329.864,17.53a12.469,12.469,0,0,0,14.8,0" transform="translate(-315.065 -15.097)"/>
+                  </g>
+                  <g id="Group_2932" data-name="Group 2932" transform="translate(29.599)">
+                    <path id="Path_1685" data-name="Path 1685" class="cls-1" d="M337.063,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-337.063 -16.51)"/>
+                    <path id="Path_1686" data-name="Path 1686" class="cls-1" d="M344.262,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-329.463 -15.097)"/>
+                  </g>
+                  <g id="Group_2933" data-name="Group 2933" transform="translate(59.198)">
+                    <path id="Path_1687" data-name="Path 1687" class="cls-1" d="M351.461,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-351.461 -16.51)"/>
+                    <path id="Path_1688" data-name="Path 1688" class="cls-1" d="M358.66,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-343.861 -15.097)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>      <h2 class="issue1">01.</h2>
+      </div>
+  
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
-    <div class="written-by">
-      Written by <span>Adam Powers</span> and <span>David Martin</span>
+  </header>
+
+  <!-- partial:index.partial.html -->
+<div class="book-wrapper">
+  <div class="book-container">
+    <div class="book" id="book">
+      <img src="./asset/pages/1.png"/>
+
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/2.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/3.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image"  src="./asset/pages/4.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/5.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/6.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/7.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/8.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/9.png"/>
+      </div>
+      <div class="page">
+        <img class = "product-image" src="./asset/pages/10.png"/>
+      </div>
     </div>
+  </div>
+</div>
+
+
+    <div class="flip-control">
+      <a href="#" id="prev"><img src="./asset/images/back.png"/></a>
+      <a href="#" id="next"> <img src="./asset/images/Next.png"/></a>
+    </div>
+  
+
+ 
+  <footer id="footer"class="footer mt-auto py-3">
+    <!-- <div class="container"> -->
+      <div class = "row footStuff">
+      <div class = "col-md-4">
+        <h1>Baseline.</h1>
+      </div>
+      <div class = "col-md-4">
+
+      </div>
+   <div class="col-md-4">
+    <div class="footer-info" style ="float: right;">
+      <h4>INFOSYS x WONGDOODY</h4>
+      <p>75 Fountain St. Providence, RI <br>
+        Phone +1 401.369.7060<br>
+        info@pvd.design<br>
+      </p>
+      <img id="WDlogo" src="./asset/images/WDlogo.png"/>
+   </div>
+       
+  </div>
+      </div>
+
+    <!-- </div> -->
+  </footer>
+</div>
+
+
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./scriptFlip.js"></script>
+<script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js'></script>
+  <script  src="./script2.js"></script>
 
 </body>
 </html>
