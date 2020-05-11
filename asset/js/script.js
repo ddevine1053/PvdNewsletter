@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
 
   var curPage = 1;
   var numOfPages = $(".skw-page").length;
@@ -50,11 +51,11 @@ $(document).ready(function() {
 
   $('.owl-carousel').owlCarousel({
     loop:false,
-  stagePadding: 25,
+    stagePadding: 25,
     margin:10,
     loop:true,
     nav:true,
-  navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+    navText: ["<img src='https://i.imgur.com/IgMqAjA.png'>","<img src='https://i.imgur.com/LdPGTL9.png'>"],
     responsive:{
         0:{
             items:1

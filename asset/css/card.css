@@ -56,7 +56,7 @@ p {
   background:rgba(30, 30,34,.75);
   color: #fff;
   margin: 0 27px;
-  height: 572px;
+  height: 472px;
   /* width: 472px; */
   box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
@@ -92,4 +92,12 @@ p {
   background: none;
   display: inline-block;
   cursor: pointer;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #ffffff00;
+  color: #FFF;
+  text-decoration: none;
+}
+.uk-card-primary {
+  border-radius: 0px;
 }

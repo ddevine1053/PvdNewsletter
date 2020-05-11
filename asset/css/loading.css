@@ -1,5 +1,5 @@
 /*Splash page*/
-.overlay {
+.coverSpread {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,7 +7,7 @@
   height: 100%;
   z-index: 100000000;
 }
-.overlay .overlayDoor:before, .overlay .overlayDoor:after {
+.coverSpread .overlayDoor:before, .coverSpread .overlayDoor:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -18,23 +18,23 @@
   -webkit-transition-delay: .8s;
           transition-delay: .8s;
 }
-.overlay .overlayDoor:before {
+.coverSpread .overlayDoor:before {
   left: 0;
 }
-.overlay .overlayDoor:after {
+.coverSpread .overlayDoor:after {
   right: 0;
 }
-.overlay.loaded .overlayDoor:before {
+.coverSpread.loaded .overlayDoor:before {
   left: -50%;
 }
-.overlay.loaded .overlayDoor:after {
+.coverSpread.loaded .overlayDoor:after {
   right: -50%;
 }
-.overlay.loaded .overlayContent {
+.coverSpread.loaded .overlayContent {
   opacity: 0;
   margin-top: -15px;
 }
-.overlay .overlayContent {
+.coverSpread .overlayContent {
   position: relative;
   width: 100%;
   height: 100%;
@@ -50,7 +50,7 @@
   -webkit-transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
 }
-.overlay .overlayContent .skip {
+.coverSpread .overlayContent .skip {
   display: block;
   width: 130px;
   text-align: center;
@@ -146,9 +146,9 @@ body {
   font-family: 'montserrat';
 }
 
-/* body.loaded {
+body.loaded {
   overflow-y: auto;
-} */
+}
 
 /* .header {
   /* background: url("https://picsum.photos/4096/2160?random=1") center/cover; */
@@ -241,7 +241,6 @@ div.jumbotron .jumbotron-fluid {
   border-radius: 0;
   color:#FBF9F3;
   background-color: #1E1E2C;
-  height: 75px;
 }
 .jumbotron {
   padding: 2rem 1rem;

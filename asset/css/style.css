@@ -132,7 +132,8 @@
   }
   .skw-page-2 .skw-page__half--right .skw-page__content {
 
-    background-color: #1E1E2C;
+    background-color: #1E1E2C;   
+    background-image: url("https://i.imgur.com/EjOxZBV.png");
   }
   .skw-page-3 .skw-page__half--left .skw-page__content {
     background-image: url("https://i.imgur.com/aLsNBe7.png");
@@ -182,7 +183,17 @@
     line-height: 200px;
   }
    */
-  .MainContainer {
+
+   h2.midTitle {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-left: 107px;
+     margin-top: -38px;
+     color:#F0F0F0;
+  
+  }
+  /* .MainContainer {
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
@@ -190,6 +201,13 @@
     overflow-y: scroll;
     background-color: #F0F0F0;
     /* background-image: url(https://i.imgur.com/8GxTy7p.png); */
+ 
+
+  .mainContainer{
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    top: 100px;
   }
   
   .ContentContainer {
@@ -205,24 +223,12 @@
     padding: 75px 0;
   }
   
-  /* p {
-    margin: 75px 0;
-  } */
-  
-  .ParallaxContainer {
-    display: flex;
-    flex: 1 0 auto;
-    position: relative;
-    z-index: -1;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transform: translateZ(-1px) scale(2);
-    background: url(https://i.imgur.com/Ayncxm5.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+
+  .container{
+    padding: 165px;
   }
   
+ 
   .article-box{
     margin: auto;
     max-width: 80%;
@@ -243,28 +249,16 @@
   } */
 /* Nav Bar */
 
-a.navbar-brand {
-  display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
-  /* font-size: 1.25rem; */
-  line-height: inherit;
-  white-space: nowrap;
-  color:#33E1ED;
-  font-family: 'montserrat';
-  font-weight: 700;
-  font-size: 2.25rem;
+
+a#burger{
+  position: fixed;
+  top: 50%;
+  left: 2.5%;
+  width: 75%;
+  z-index: 9999;
 }
 
-h2.issue1 {
-  font-size: 2rem;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  margin-left: 107px;
-   margin-top: -38px;
 
-}
 p.lead{
   font-family: 'lato';
   font-size: 18px;
@@ -317,8 +311,15 @@ p.lead{
 
 
 
-.issuecard{
-  background-color: blue;
-  max-height: 674px;
-  width: 490px;
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
 }

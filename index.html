@@ -16,123 +16,176 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="./asset/css/loading.css">
 	<link rel="stylesheet" href="./asset/css/card.css">
+	<link rel="stylesheet" href="./asset/css/menu.css">
 	<link rel="stylesheet" href="./asset/css/style.css">
-
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- JQUERY and Normalize.css INSTALLED -->
+<!--splash-->
+  <div class="coverSpread">
+    <div class="overlayDoor"></div>
+    <div class="overlayContent">
+      <div class="loader" id="fontChange">Baseline.</div>
+      <!-- <div class="skip">SKIP.</div> -->
+    </div>
+  </div>
 
-<div class="overlay">
-	<div class="overlayDoor"></div>
-	<div class="overlayContent">
-		<div class="loader" id="fontChange">Baseline.</div>
-		<!-- <div class="skip">SKIP.</div> -->
-	</div>
-</div>
-
-
-
-<!-- Content after load -->
-<div class="header">
-	<div class="darken">
-	    <!-- Header & Nav Bar-->
-		<div class="ccontatiner">
-			<header id="top">
-			  <nav class="navbar">
-				<a class="navbar-brand" href="#">Baseline.</a>
-			  </nav>
-			  </header>
-
-			<div class="main">
-			  <div class="skw-pages">
-				<div class="skw-page skw-page-1 active">
-				  <div class="skw-page__half skw-page__half--left">
-					<div class="skw-page__skewed">
-					  <div class="skw-page__content"></div>
-					</div>
-				  </div>
-				  <div class="skw-page__half skw-page__half--right">
-					<div class="skw-page__skewed">
-					  <div class="skw-page__content">
-			  <!--           <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
-						<p class="skw-page__description">Just scroll down</p> -->
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="skw-page skw-page-2">
-				  <div class="skw-page__half skw-page__half--left">
-					<div class="skw-page__skewed">
-					  <div class="skw-page__content">
-					  </div>
-					</div>
-				  </div>
-				  <div class="skw-page__half skw-page__half--right">
-					<div class="skw-page__skewed">
-					  <div class="skw-page__content"></div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="card text-white">
-  <img src="./asset/images/bluebck@2x.png" class="card-img" alt="...">
-  <div class="card-img-overlay">
-	<div class="container">
-		<div class="squiggle">
-		  <svg xmlns="http://www.w3.org/2000/svg" width="94.376" height="8.866" viewBox="0 0 94.376 8.866">
-			<defs>
-			  <style>
-				.cls-1 {
-				  fill: none;
-				  stroke: #FBF9F3;
-				  stroke-linecap: round;
-				  stroke-miterlimit: 10;
-				  stroke-width: 4px;
-				}
-			  </style>
-			</defs>
-			<g id="Group_2948" data-name="Group 2948" transform="translate(2.79 2)">
-			  <g id="Group_2947" data-name="Group 2947">
-				<g id="Group_2934" data-name="Group 2934">
-				  <g id="Group_2931" data-name="Group 2931">
-					<path id="Path_1683" data-name="Path 1683" class="cls-1" d="M322.665,18.943a12.47,12.47,0,0,1,14.8,0" transform="translate(-322.665 -16.51)"/>
-					<path id="Path_1684" data-name="Path 1684" class="cls-1" d="M329.864,17.53a12.469,12.469,0,0,0,14.8,0" transform="translate(-315.065 -15.097)"/>
-				  </g>
-				  <g id="Group_2932" data-name="Group 2932" transform="translate(29.599)">
-					<path id="Path_1685" data-name="Path 1685" class="cls-1" d="M337.063,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-337.063 -16.51)"/>
-					<path id="Path_1686" data-name="Path 1686" class="cls-1" d="M344.262,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-329.463 -15.097)"/>
-				  </g>
-				  <g id="Group_2933" data-name="Group 2933" transform="translate(59.198)">
-					<path id="Path_1687" data-name="Path 1687" class="cls-1" d="M351.461,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-351.461 -16.51)"/>
-					<path id="Path_1688" data-name="Path 1688" class="cls-1" d="M358.66,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-343.861 -15.097)"/>
-				  </g>
-				</g>
-			  </g>
-			</g>
-		  </svg>      <h2 class="issue1">01.</h2>
-	  </div>
-  
-		<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-	  </div>
-		</div>
-		</div>
-<!--pvd image-->
-		<div class="card bg-dark text-white">
-			<img src="./asset/images/imageppl@2x.png" class="card-img" alt="...">
-		  </div>
-
+<!--enter-->
+<!-- <div class="header">
+	<div class="darken"> -->
+<div class="background">
+  <nav>
+    <div class="navWrapper">
+      <a href="" id="logo">Baseline.</a>
+      <div class="right"> 
+        <div id="nav-icon" id="menuIcon">
+          <img  id="burger" src="https://i.imgur.com/k8f0Utc.png" title="source: imgur.com" />
+        </div>
+        <div class="overlay">
+          <div  style="width:100%;"class="overlayContent">
+            <div class=" menulist col-m-8" style="float:left; padding-top:30%;">
+            <div class="uglyX"></div>
+            <a href="./index1.html" id="home">Home</a>
+            <a href="#" id="archieve">Archieve</a>
+          </div>
+          <div class=" contact-bar col-m-4"style="float:right;">
+          	<div class="contactbar"style="padding:20px;margin-bottom:100px;background-color:#F8F8F8;">
+              <img style="padding: 20px;" src="https://i.imgur.com/ZEw6V4Y.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </nav>
+  <div class="mainContainer">
+    <div class="skw-pages">
+    <div class="skw-page skw-page-1 active">
+      <div class="skw-page__half skw-page__half--left">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content"></div>
+      </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="skw-page skw-page-2">
+      <div class="skw-page__half skw-page__half--left">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content">
+          <!-- <div class="container">
+            <div  data-aos="fade-down" class="squiggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="94.376" height="8.866" viewBox="0 0 94.376 8.866">
+              <defs>
+                <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #FBF9F3;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 10;
+                  stroke-width: 4px;
+                }
+                </style>
+              </defs>
+              <g id="Group_2948" data-name="Group 2948" transform="translate(2.79 2)">
+                <g id="Group_2947" data-name="Group 2947">
+                <g id="Group_2934" data-name="Group 2934">
+                  <g id="Group_2931" data-name="Group 2931">
+                  <path id="Path_1683" data-name="Path 1683" class="cls-1" d="M322.665,18.943a12.47,12.47,0,0,1,14.8,0" transform="translate(-322.665 -16.51)"/>
+                  <path id="Path_1684" data-name="Path 1684" class="cls-1" d="M329.864,17.53a12.469,12.469,0,0,0,14.8,0" transform="translate(-315.065 -15.097)"/>
+                  </g>
+                  <g id="Group_2932" data-name="Group 2932" transform="translate(29.599)">
+                  <path id="Path_1685" data-name="Path 1685" class="cls-1" d="M337.063,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-337.063 -16.51)"/>
+                  <path id="Path_1686" data-name="Path 1686" class="cls-1" d="M344.262,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-329.463 -15.097)"/>
+                  </g>
+                  <g id="Group_2933" data-name="Group 2933" transform="translate(59.198)">
+                  <path id="Path_1687" data-name="Path 1687" class="cls-1" d="M351.461,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-351.461 -16.51)"/>
+                  <path id="Path_1688" data-name="Path 1688" class="cls-1" d="M358.66,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-343.861 -15.097)"/>
+                  </g>
+                </g>
+                </g>
+              </g>
+              </svg>      
+              <h2 class="midTitle" data-aos="fade-down" >Baseline.</h2>
+            </div>
+          
+            <p class="lead" data-aos="fade-down" >This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div> -->
+        </div>
+      </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div   class="card text-white">
+      <img src="./asset/images/bluebck@2x.png" class="card-img" alt="...">
+      <div class="card-img-overlay">
+      <div class="container">
+        <div  data-aos="fade-down" class="squiggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="94.376" height="8.866" viewBox="0 0 94.376 8.866">
+          <defs>
+            <style>
+            .cls-1 {
+              fill: none;
+              stroke: #FBF9F3;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 4px;
+            }
+            </style>
+          </defs>
+          <g id="Group_2948" data-name="Group 2948" transform="translate(2.79 2)">
+            <g id="Group_2947" data-name="Group 2947">
+            <g id="Group_2934" data-name="Group 2934">
+              <g id="Group_2931" data-name="Group 2931">
+              <path id="Path_1683" data-name="Path 1683" class="cls-1" d="M322.665,18.943a12.47,12.47,0,0,1,14.8,0" transform="translate(-322.665 -16.51)"/>
+              <path id="Path_1684" data-name="Path 1684" class="cls-1" d="M329.864,17.53a12.469,12.469,0,0,0,14.8,0" transform="translate(-315.065 -15.097)"/>
+              </g>
+              <g id="Group_2932" data-name="Group 2932" transform="translate(29.599)">
+              <path id="Path_1685" data-name="Path 1685" class="cls-1" d="M337.063,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-337.063 -16.51)"/>
+              <path id="Path_1686" data-name="Path 1686" class="cls-1" d="M344.262,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-329.463 -15.097)"/>
+              </g>
+              <g id="Group_2933" data-name="Group 2933" transform="translate(59.198)">
+              <path id="Path_1687" data-name="Path 1687" class="cls-1" d="M351.461,18.943a12.469,12.469,0,0,1,14.8,0" transform="translate(-351.461 -16.51)"/>
+              <path id="Path_1688" data-name="Path 1688" class="cls-1" d="M358.66,17.53a12.47,12.47,0,0,0,14.8,0" transform="translate(-343.861 -15.097)"/>
+              </g>
+            </g>
+            </g>
+          </g>
+          </svg>      
+          <h2 class="midTitle" data-aos="fade-down" >Baseline.</h2>
+        </div>
+      
+        <p class="lead" data-aos="fade-down" >This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+        </div>
+        </div>
+    <!--pvd image-->
+        <div class="card bg-dark text-white">
+          <img data-aos="fade-down" src="./asset/images/imageppl@2x.png" class="card-img" style="margin-bottom: -71px";alt="...">
+          </div>
+        <!-- </div> -->
 <!-- Issue Card Carousel -->
 <div class="uk-margin"></div>
-<div class="uk-section"><div class="owl-carousel owl-theme">
+<div data-aos="fade-down"   data-aos-duration="3000" class="uk-section"><div class="owl-carousel owl-theme">
     <div class="item">
         <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
             <!-- <h3 class="uk-card-title">#01</h3> -->
+            <div class="card-content">
             <p>#01</p>
             <h3>The Introduction</h3>
-            <p>Current Balance</p>
+      <p>05.08.2020</p>
+      <a href="./issue/01.html">View</a>
+    </div>
         </div>
       
   </div>
@@ -167,8 +220,11 @@
 </div>
   </div>
   <!---End of cards-->	
-  <footer id="footer"class="footer mt-auto py-3">
-    <!-- <div class="container"> -->
+
+
+<!--Footer-->
+  <footer data-aos="fade-down"   data-aos-duration="3000"  id="footer"class="footer mt-auto py-3">
+    <!-- <div class="mainContainer"> -->
       <div class = "row footStuff">
       <div class = "col-md-8">
         <h1>Baseline.</h1>
@@ -187,28 +243,39 @@
       </div>
 
     <!-- </div> -->
-  </footer>		
-  </div>
-  </div>
-			  
+  </footer>	
+
+<!-- </div> -->
 
 
+
+</div>
+</div>
+
+
+<!-- https://codepen.io/rossorthwein/pen/9b18a1d7428a868ceef2b2180d0cd901 -->
 <!-- partial -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./asset/js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script>
-<script  src="./asset/js/loading.js"></script>
-<script src="./asset/js/card.js"></script>
-  <script  src="./asset/js/script.js"></script>
+<script  src="./asset/js/script.js"></script>
+<!-- <script src="./asset/js/loading.js"></script> -->
   <script>
-	AOS.init();
-  </script>
+    window.onload = function(){
+  $('.coverSpread').animate({'opacity': 0},5000, function() {
+    $('.coverSpread').remove();
+    console.info('Loading complete.');
+  });
+};
+
+      AOS.init();
+      </script>
 
 </body>
 </html>
