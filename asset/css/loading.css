@@ -5,7 +5,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100000000;
+  z-index: 1;
+  overflow: hidden;
 }
 .coverSpread .overlayDoor:before, .coverSpread .overlayDoor:after {
   content: "";
@@ -24,15 +25,16 @@
 .coverSpread .overlayDoor:after {
   right: 0;
 }
-.coverSpread.loaded .overlayDoor:before {
+.coverSpread.finito .overlayDoor:before {
   left: -50%;
 }
-.coverSpread.loaded .overlayDoor:after {
+.coverSpread.finito .overlayDoor:after {
   right: -50%;
 }
-.coverSpread.loaded .overlayContent {
+.coverSpread.finito .overlayContent {
   opacity: 0;
   margin-top: -15px;
+  z-index: 0;
 }
 .coverSpread .overlayContent {
   position: relative;
@@ -146,9 +148,9 @@ body {
   font-family: 'montserrat';
 }
 
-body.loaded {
+/* body.finito {
   overflow-y: auto;
-}
+} */
 
 /* .header {
   /* background: url("https://picsum.photos/4096/2160?random=1") center/cover; */

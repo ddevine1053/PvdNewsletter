@@ -2,7 +2,7 @@
 	
 // 	// Users can skip the loading process if they want.
 // 	$('.skip').click(function() {
-// 		$('.coverSpread').addClass('loaded');
+// 		$('.coverSpread').addClass('finito');
 // 	})
 
 // 	setTimeout(function() {
@@ -12,6 +12,7 @@
 
 setTimeout(function() {
 	$('.coverSpread, body')
-	  .removeClass('loading')
+	//   .removeClass('loading')
 	  .addClass('loaded');
+	  $('.coverSpread').remove();
   }, 3000);
