@@ -9,7 +9,8 @@
   .skw-pages {
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: 80vh;
+    margin-bottom: 50px;
   }
   
   .skw-page {
@@ -114,35 +115,50 @@
     color: #FFA0A0;
   }
   .skw-page-1 .skw-page__half--left .skw-page__content {
+
     background-repeat: no-repeat;
-    background-image: url("https://i.imgur.com/43Jhzct.png");
+    background-image: url(https://imgur.com/43Jhzct.png);
     background-attachment: fixed;
-    background-position: -200px 0px;
+    position: fixed;
+    background-size: contain;
+    background-position-x: -373px;
     background-color: #1E1E2C;
+    /* background-repeat: no-repeat;
+    background-image: url("https://imgur.com/43Jhzct.png"); */
+    /* background-attachment: fixed; */
+    /* position: fixed; */
+    /* background-size: 50%;
+    background-position: 350px 300px; */
+    /* background-color: #1E1E2C; */
   }
   .skw-page-1 .skw-page__half--right .skw-page__content {
-    background-image: url("https://i.imgur.com/7pXx7UL.png");
+    background-image: url("https://imgur.com/7pXx7UL.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 70px 0px;
+    background-attachment: fixed; */
+    position: fixed;
+   background-size: 80%;
+    background-position: -250px 0px;
     background-color:#FBF9F3;
-  }
+  } 
   .skw-page-2 .skw-page__half--left .skw-page__content {
     background-color: #1E1E2C;
+    background-position: -200px 0px;
+    background-image: url("https://i.imgur.com/fYhRED1.png");
   }
   .skw-page-2 .skw-page__half--right .skw-page__content {
 
     background-color: #1E1E2C;   
-    background-image: url("https://i.imgur.com/EjOxZBV.png");
+    background-position: 70px 0px;
+    background-image: url("https://i.imgur.com/fYhRED1.png");
   }
   .skw-page-3 .skw-page__half--left .skw-page__content {
-    background-image: url("https://i.imgur.com/aLsNBe7.png");
+    background-image: url("https://i.imgur.com/fYhRED1.png");
     background-attachment: fixed;
     background-position: -200px 0px;
     background-color: #3C3939;
   }
   .skw-page-3 .skw-page__half--right .skw-page__content {
-    background-image: url("https://i.imgur.com/aLsNBe7.png");
+    background-image: url("https://i.imgur.com/fYhRED1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 70px 0px;
@@ -204,10 +220,9 @@
  
 
   .mainContainer{
-    position: absolute;
+    /* position: absolute; */
     width: 90%;
     margin: auto;
-    top: 100px;
   }
   
   .ContentContainer {
@@ -323,3 +338,4 @@ p.lead{
     background-clip: border-box;
     border: none;
 }
+

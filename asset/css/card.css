@@ -4,12 +4,13 @@
 .owl-carousel {
   position: relative;
   margin-top: 30px;
+  z-index:999999;
 }
 .owl-nav {
   position: absolute;
   top: -60px;
   left: 10px;
-  z-index: 100;
+  z-index: 9999999;
 }
 .uk-card-primary {
   border-radius: 8px;
