@@ -1,9 +1,3 @@
-/* :before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  */
   
   /* Diagonal Landing*/
   .skw-pages {
@@ -115,7 +109,6 @@
     color: #FFA0A0;
   }
   .skw-page-1 .skw-page__half--left .skw-page__content {
-
     background-repeat: no-repeat;
     background-image: url(https://imgur.com/43Jhzct.png);
     background-attachment: fixed;
@@ -123,13 +116,6 @@
     background-size: contain;
     background-position-x: -373px;
     background-color: #1E1E2C;
-    /* background-repeat: no-repeat;
-    background-image: url("https://imgur.com/43Jhzct.png"); */
-    /* background-attachment: fixed; */
-    /* position: fixed; */
-    /* background-size: 50%;
-    background-position: 350px 300px; */
-    /* background-color: #1E1E2C; */
   }
   .skw-page-1 .skw-page__half--right .skw-page__content {
     background-image: url("https://imgur.com/7pXx7UL.png");
@@ -178,27 +164,10 @@
     background-color: #1E1E2C;
   }
 
-  /* html, body {
-    font-family: Open Sans;
-    font-size: 18px;
-    line-height: 28px;
-    scroll-behavior: smooth;
-  } */
   .ccontatiner{
     width:90%;
     margin: auto;
   }
-/*   
-  h1 {
-    letter-spacing: -15px;
-    font-family: Open Sans;
-    color: white;
-    text-align: center;
-    font-size: 200px;
-    font-weight: 800;
-    line-height: 200px;
-  }
-   */
 
    h2.midTitle {
     font-size: 2rem;
@@ -209,15 +178,6 @@
      color:#F0F0F0;
   
   }
-  /* .MainContainer {
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: #F0F0F0;
-    /* background-image: url(https://i.imgur.com/8GxTy7p.png); */
- 
 
   .mainContainer{
     /* position: absolute; */
@@ -255,13 +215,11 @@
     margin: 20%;
   }
 
-
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
-  @import url(//db.onlinewebfonts.com/c/c4a64740ecb71342cea0a87b66ee15e0?family=PhosphateInline);
   
   .mainBody{
     padding: 0 50px;
   } */
+
 /* Nav Bar */
 
 
@@ -323,9 +281,6 @@ p.lead{
   width: 32%;
   padding-bottom: 4%;
 }
-
-
-
 .card {
     position: relative;
     display: -ms-flexbox;
