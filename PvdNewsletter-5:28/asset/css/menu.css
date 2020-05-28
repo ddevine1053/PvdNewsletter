@@ -1,0 +1,294 @@
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+@keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+nav:after {
+  background: white;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 100%;
+}
+nav.open {
+  overflow: hidden;
+}
+nav.open:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.b-nav {
+  z-index: 1000000;
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+  top: 0px;
+  position: fixed;
+}
+
+div 
+.b-nav:not(.open) {
+  visibility: hidden;
+}
+.b-nav li {
+  color: #444444;
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 10%;
+  text-align: left;
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+.b-nav li:not(.open) {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: slideOutLeft;
+          animation-name: slideOutLeft;
+}
+.b-nav li:first-child {
+  padding-top: 120px;
+}
+.b-nav.open {
+  visibility: visible;
+}
+.b-nav.open li {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+}
+
+.b-link {
+  background: transparent;
+  border-left: rgba(68, 68, 68, 0) solid 2px;
+  color: #444444;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: auto;
+}
+
+.b-menu {
+  cursor: pointer;
+  display: inline-block;
+  height: 100vh;
+  padding-left: 34.5px;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100px;
+  z-index: 12;
+  position: fixed;
+}
+.b-menu:hover {
+
+}
+
+.b-bun {
+
+  position: absolute;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 50vh;
+  right: 30px;
+
+}
+.b-bun--top {
+  background:linear-gradient(to right, #1E1E2C 77%, #FBF9F3 0%);
+  height: 4px;
+  top: 0;
+  width: 35px;
+  border-radius: 25px;
+
+}
+.b-bun--mid {
+  background:linear-gradient(to right, #1E1E2C 60%, #FBF9F3 20%);
+  height: 4px;
+  top: 8px;
+  width: 20px;
+  border-radius: 25px;
+}
+.b-bun--mid2 {
+  background:linear-gradient(to right, #1E1E2C 80%, #FBF9F3 0%);
+  height: 4px;
+  top: 16px;
+  width: 40px;
+  border-radius: 25px;
+}
+.b-bun--bottom {
+  background:linear-gradient(to right, #1E1E2C 68%, #FBF9F3 0%);
+  height: 4px;
+  top: 24px;
+  width: 25px;
+    border-radius: 25px;
+}
+
+.b-brand {
+  color: black;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 30px;
+  position: relative;
+  text-decoration: none;
+  top: -21.4285714286px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 13;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.b-container {
+  height: 60px;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+}
+.b-container:hover:not(.open) .bun-top,
+.b-container:hover:not(.open) .bun-mid,
+.b-container:hover:not(.open) .bun-bottom {
+  background: white;
+}
+.b-container.open .b-main {
+  /* border: #444444 solid 2px; */
+}
+.b-container.open .b-menu {
+  background-color: #1E1E2C;
+  z-index: 100000001;
+}
+.b-container.open .b-bun--top {
+  background: #FBF9F3;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.b-container.open .b-bun--mid2 {
+  opacity: 0;
+}
+.b-container.open .b-bun--mid {
+  opacity: 0;
+}
+.b-container.open .b-bun--bottom {
+  background: #FBF9F3;
+  top: 9px;
+  width: 35px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.b-container.open .b-brand {
+  color: #444444;
+}
+
+.b-container.open p{
+  opacity: 0;
+}
+
+.menutext{
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+   position: relative;
+   margin-top: 54vh;
+    margin-left: 7vh;
+    text-transform: uppercase;
+    color: white;
+}
+
+div {
+  position: relative;
+  color: #000;
+  font-size: 28px;
+  /* padding: 0 10px; */
+}
+
+div span {
+  height: 50%;
+  position: absolute;
+  color: #000;
+  overflow: hidden;
+  /* padding: 0 10px; */
+}
+div span:hover, div span--active {
+  color: #f00;
+  background-color: green;
+  background-size: 130%;
+}
+
+
+a.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  /* font-size: 1.25rem; */
+  line-height: inherit;
+  white-space: nowrap;
+  color:#33E1ED;
+  font-family: 'montserrat';
+  font-weight: 700;
+  font-size: 2.25rem;
+}

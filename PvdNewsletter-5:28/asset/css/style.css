@@ -1,0 +1,93 @@
+  a.navbar-brand {
+    position: relative;
+    left: 75px;
+    top: 17px;
+    margin-bottom: 16px;
+  }
+
+  div.card_bg-dark_text-white {
+    margin-left: 91px;
+    margin-right: 91px;
+    margin-bottom: -40px;
+  }
+
+  div.item {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  
+/* Nav Bar */
+
+
+a.#burger{
+  position: fixed;
+  top: 50%;
+  left: 2.5%;
+  width: 75%;
+  z-index: 9;
+}
+
+
+p.lead{
+  font-family: 'lato';
+  font-size: 18px;
+  margin-left: 107px;
+}
+
+/*Footer */
+
+#footer{
+  /* height: 465px; */
+  margin-top: -70px;
+  margin-bottom:25px;
+  margin-left: 55px;
+  margin-right: 65px;
+ 
+}
+.footer-info h4{
+  font-family: 'Montserrat';
+  font-size: 34px;
+  text-align: right;
+}
+.footer-info{
+  margin-right: 30px;
+}
+
+.footer-info p{
+  font-family: 'lato';
+  font-size: 18px;
+  text-align: right;
+}
+
+.footStuff h1{
+  font-family: 'Montserrat';
+  font-size:117px;
+  font-weight: 700;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color:  #33E1ED;
+  margin-left: 30px;
+  margin-top: 150px;
+}
+
+#WDlogo img{
+  height: auto;
+  margin-top:-19px;
+  position: absolute;
+  float: right;
+  width: 32%;
+  padding-bottom: 4%;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+}
+
