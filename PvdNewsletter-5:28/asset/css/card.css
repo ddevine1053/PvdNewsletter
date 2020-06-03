@@ -1,0 +1,72 @@
+.uk-section {
+  z-index:11;
+}
+.owl-carousel {
+  position: relative;
+  z-index:11;
+}
+.uk-card-primary {
+  border-radius: 8px;
+}
+h3 {
+  margin-top: 10px
+}
+.uk-card > :last-child {
+  margin-top:0;
+  margin-bottom: 0px
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.owl-next {
+  background: #3286f0;
+}
+
+.uk-card-primary {
+  background:rgba(30, 30,34,.75);
+  color: #fff;
+  height: 390px;
+  width: 395px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.uk-card .uk-card-primary .uk-card-hover .uk-card-body .uk-light{
+  background: #1E1E2C;
+  color: #fff;
+  text-shadow: none;
+}
+
+.uk-card-primary.uk-card-hover:hover {
+  background: #1E1E2C;
+  box-shadow: 0 14px 25px rgba(0,0,0,.16);
+}
+
+
+::selection {
+  background: #1E1E2C;
+  color: #fff;
+  text-shadow: none;
+}
+
+.owl-nav {
+  position: relative;
+  top: 0px;
+  /* margin: 0 10px; */
+  /* left: 10px; */
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #ffffff00;
+  color: #FFF;
+  text-decoration: none;
+}
+.uk-card-primary {
+  border-radius: 0px;
+}
