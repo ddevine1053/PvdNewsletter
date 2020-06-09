@@ -1,5 +1,6 @@
 body.hide-overflow {
   /* overflow: hidden; */
+  background-color: #f8f8f8;
 }
 
 /* helpers */
@@ -31,6 +32,7 @@ body.hide-overflow {
   user-select: none;
   margin-top: -31px;
   margin-bottom: 138px;
+  background: rgb(30, 30, 44, 0.14);
 }
 
 
@@ -188,7 +190,8 @@ p.lead{
 /*Footer */
 
 #footer{
-  background-color: #FbF9F3;
+  /* Removing background color s@z
+  background-color: #FbF9F3; */
   /* height: 465px; */
   margin-bottom:0;
  
@@ -211,10 +214,10 @@ p.lead{
 
 .footStuff h1{
   font-family: 'Montserrat';
-  font-size:117px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: bold;
   -webkit-text-fill-color: #FBF9F3; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color:  #33E1ED;
   margin-left: 30px;
   margin-top: 150px;
@@ -229,3 +232,161 @@ p.lead{
   padding-bottom: 4%;
 }
 
+.introtext {
+	float: left;
+	font-family: Montserrat;
+	font-weight: bold;
+	color: grey;
+	text-align: left;
+	margin: 10% 0 0 5%;
+	font-size: 5vw;
+}
+.thankyoutext {
+	float: right;
+	font-family: Montserrat;
+	font-weight: bold;
+	color: grey;
+	text-align: Right;
+	margin: 10% 5% 0 0;
+	font-size: 5vw;
+}
+/* breakpoint for mobile approaching tablet*/
+@media (max-width: 639px) {
+	html {
+		min-width: 375px;
+	}
+	#book {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 107px;
+	}
+	
+	.ccontatiner {
+		/*margin-left: 3.9%;*/
+	}
+	.navbar {
+		padding: 0;
+		margin: 1.6% 0 1.6% 0;
+	}
+	.container {
+		padding-top: 3em;
+	}
+	p.lead {
+		font-size: 1rem;
+	}
+	h2.issue1 {
+		font-size: 1.5rem;
+	}
+	#banner {
+	}
+	#footer h1 {
+		margin: 0 0 0 3%;
+	}
+	#footer h4 {
+		font-size: 10px;
+	}
+	#footer p {
+		font-size: 8px;
+	}
+	.footer-info {
+		margin: 0 8% 0 0;
+	}		
+}
+
+/* breakpoint for tablet approaching desktop*/
+@media (min-width: 640px) and (max-width: 1919px) {
+	#book {
+		width: 100%;
+		margin-bottom: 74px;
+	}
+	
+	.navbar {
+		padding: 0;
+		margin: 1.6% 0 1.6% 0;
+	}
+	
+	.container {
+		padding-top: 3em;
+		margin-left: 8em;
+	}
+	
+	#banner {
+	}
+	
+	#footer h1 {
+		margin: 0 0 0 3%;
+	}
+	#footer h4 {
+		font-size: 12px;
+	}
+	#footer p {
+		font-size: 10px;
+	}
+	.footer-info {
+		margin: 0 8% 0 0;
+	}
+}
+
+@media (min-width: 1920px) {
+	#book {
+		width: 100%;
+		margin-bottom: 145px;
+	}
+	
+	.navbar {
+		padding: 0;
+		margin: 1.6% 0 1.6% 0;
+	}
+	.container {
+		padding-top: 4em;
+		padding-left: 6em;
+	}
+	#banner {
+		height: 18vh;
+	}
+	
+	#footer h1 {
+		margin: 0 0 145px 3%;
+		width: 350px;
+		height: 91px;
+		-webkit-text-stroke: 3px #33e1ed;
+		font-family: Montserrat;
+		font-size: 74px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.23;
+		letter-spacing: normal;
+		text-align: left;
+		color: #fbf9f3;
+}
+	
+	#footer h4 {
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.21;
+		letter-spacing: normal;
+		text-align: right;
+		color: #1e1e2c;
+		padding-top: 10%;
+}
+	
+	#footer p {
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.19;
+		letter-spacing: normal;
+		text-align: right;
+		color: #1e1e2c;
+	}
+	.footer-info {
+		margin: 0 8% 0 0;
+	}
+}
