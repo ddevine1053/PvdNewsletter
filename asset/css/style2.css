@@ -210,18 +210,16 @@ p.lead{
 
 .footStuff h1{
   font-family: 'Montserrat';
-  font-size: 74px;
   font-weight: bold;
   -webkit-text-fill-color: #FBF9F3; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color:  #33E1ED;
-  margin-left: 30px;
   margin-top: 150px;
 }
 
 #WDlogo {
   height: auto;
-  width: 11em;
+  width: 14em;
 }
 
 .introtext {
@@ -268,10 +266,10 @@ p.lead{
 	#banner {
 	}
 	#footer h1 {
-		margin: 0px 0px 0px 0px;
+		margin: 0px 0px 15px 0px;
 	}
 	#footer h4 {
-		font-size: 24px;
+		font-size: 18px;
 	}
 	#footer p {
 		font-size: 14px;
@@ -308,13 +306,16 @@ p.lead{
 		margin: 0% 0% 0% 0%;
 	}
 	#footer h4 {
-		font-size: 34px;
+		font-size: 18px;
 	}
 	#footer p {
-		font-size: 24px;
+		font-size: 14px;
 	}
 	.footer-info {
 		margin: 0% 0% 0% 0%;
+	}
+	#WDlogo {
+		width: 12em;
 	}
 }
 
@@ -350,11 +351,11 @@ p.lead{
 		letter-spacing: normal;
 		text-align: left;
 		color: #fbf9f3;
-}
+	}
 	
 	#footer h4 {
 		font-family: Montserrat;
-		font-size: 34px;
+		font-size: 24px;
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
@@ -363,11 +364,12 @@ p.lead{
 		text-align: right;
 		color: #1e1e2c;
 		padding-top: 10%;
-}
+
+	}
 	
 	#footer p {
 		font-family: Lato;
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: 300;
 		font-stretch: normal;
 		font-style: normal;
@@ -376,4 +378,5 @@ p.lead{
 		text-align: right;
 		color: #1e1e2c;
 	}
+	
 }
