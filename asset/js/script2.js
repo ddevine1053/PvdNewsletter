@@ -10,7 +10,14 @@ var turn = {
       this.el = document.getElementById(id);
       this.resize();
       this.plugins();
-
+	
+	  // test of onload szaf
+	  
+	  window.addEventListener('load', function (e) {
+        var size = me.resize();
+        $(me.el).turn('size', size.width, size.height);
+      });
+	
       // on window resize, update the plugin size
       window.addEventListener('resize', function (e) {
         var size = me.resize();
@@ -28,10 +35,13 @@ var turn = {
         padded = Math.round(document.body.clientHeight * 0.9);
 
     // if the height is too big for the window, constrain it
-    if (height > padded) {
+    
+	
+	/* szaf 
+	  if (height > padded) {
       height = padded;
       width = Math.round(height * this.ratio);
-    }
+    } */
 
     // set the width and height matching the aspect ratio
     this.el.style.width = width + 'px';
