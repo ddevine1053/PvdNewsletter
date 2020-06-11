@@ -198,19 +198,19 @@ p.lead{
 }
 .footer-info h4{
   font-family: 'Montserrat';
-  font-size: 34px;
+  font-size: 24px;
   text-align: right;
 }
 
 .footer-info p{
   font-family: 'lato';
-  font-size: 18px;
+  font-size: 16px;
   text-align: right;
 }
 
 .footStuff h1{
   font-family: 'Montserrat';
-  font-size: 34px;
+  font-size: 74px;
   font-weight: bold;
   -webkit-text-fill-color: #FBF9F3; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.5px;
@@ -221,7 +221,7 @@ p.lead{
 
 #WDlogo {
   height: auto;
-  width: 18em;
+  width: 11em;
 }
 
 .introtext {
