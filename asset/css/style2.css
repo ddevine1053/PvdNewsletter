@@ -149,7 +149,7 @@ div.jumbotron .jumbotron-fluid {
   background-color: #fbf9f3;
 }
 .jumbotron {
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   margin-bottom: 2rem;
   background-color: #fbf9f3;
   border-radius: .3rem;
@@ -196,16 +196,28 @@ p.lead{
   margin-bottom:0;
  
 }
+
+.footer-info{
+	padding-top: 58px;
+	float: right;
+}
 .footer-info h4{
   font-family: 'Montserrat';
-  font-size: 24px;
+  font-size: 16px;
   text-align: right;
+  line-height: .2;
 }
 
 .footer-info p{
   font-family: 'lato';
   font-size: 16px;
   text-align: right;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.footStuff{
+	margin-top: -78px;
 }
 
 .footStuff h1{
@@ -220,6 +232,7 @@ p.lead{
 #WDlogo {
   height: auto;
   width: 14em;
+  float: right;
 }
 
 .introtext {
@@ -250,12 +263,15 @@ p.lead{
 	.ccontatiner {
 		/*margin-left: 3.9%;*/
 	}
+	a.navbar-brand{
+		font-size: 1.75rem;
+	}
 	.navbar {
 		padding: 0;
 		margin: 1.6% 0 1.6% 0;
 	}
 	.container {
-		padding-top: 3em;
+		padding-top: 0em;
 	}
 	p.lead {
 		font-size: 1rem;
@@ -266,20 +282,34 @@ p.lead{
 	#banner {
 	}
 	#footer h1 {
-		margin: 0px 0px 15px 0px;
+		margin: 0px 0px 16px 0px;
 		font-size: 34px;
 	}
 	#footer h4 {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	#footer p {
 		font-size: 14px;
 	}
 	.footer-info {
 		margin: 0 0 0 0;
+		text-align:left;
+		float:left;
+		padding-top: 0px;
+	}
+	.footer-info h4{
+		text-align: left;
+	}
+	.footer-info p{
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.footStuff{
+		margin-top: -118px;
 	}
 	#WDlogo {
 		width: 12em;
+		float: left;
 }
 }
 
@@ -296,7 +326,7 @@ p.lead{
 	}
 	
 	.container {
-		padding-top: 3em;
+		padding-top: 0em;
 		margin-left: 8em;
 	}
 	
@@ -308,13 +338,14 @@ p.lead{
 		font-size: 54px;
 	}
 	#footer h4 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	#footer p {
 		font-size: 14px;
 	}
 	.footer-info {
 		margin: 0% 0% 0% 0%;
+		float: right;
 	}
 	#WDlogo {
 		width: 12em;
@@ -332,15 +363,15 @@ p.lead{
 		margin: 1.6% 0 1.6% 0;
 	}
 	.container {
-		padding-top: 4em;
+		padding-top: 0em;
 		padding-left: 6em;
 	}
 	#banner {
-		height: 18vh;
+		/* height: 18vh; */
 	}
 	
 	#footer h1 {
-		margin: 0% 0% 145px 0%;
+		margin: 0% 0% 54px 0%;
 		width: 350px;
 		height: 91px;
 		-webkit-text-stroke: 3px #33e1ed;
@@ -365,8 +396,7 @@ p.lead{
 		letter-spacing: normal;
 		text-align: right;
 		color: #1e1e2c;
-		padding-top: 10%;
-
+		/* padding-top: 10%; */
 	}
 	
 	#footer p {
